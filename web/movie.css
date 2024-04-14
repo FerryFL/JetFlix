@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #2F2A2A;
+    padding-top: 120px;
+    z-index: -9;
+}
+
+a{
+    color: #D72020;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+button{
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #D72020;
+    border-radius: 10%;
+    font-size: 40px;
+    font-weight: bold;
+    font-weight: 400;
+}
+
+
+header {
+    width: 100%;
+    height: 80px;
+    top: 0;
+    background-color: #2F2A2A;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+.navkiri{
+    width: 200px;
+    height: 100%;
+    /* background-color: cyan; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.navkiri img{
+    width: 130px;
+
+} 
+
+.navmovie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    /* background-color: purple; */
+}
+
+.navmovie a{
+    color: #786B6B;
+    font-size: 22px;
+}
+
+.navnews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    /* background-color: rgb(72, 94, 121); */
+}
+
+.navnews a{
+    color: #786B6B;
+    font-size: 22px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    /* background-color: yellow;   */
+}
+
+.jumbotron{
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%; 
+    position: absolute;
+    z-index: 2;
+}
+
+
+.jumbohover{
+    width: 90%;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: absolute;
+}
+
+.jumbotron:hover{
+    display: none;
+}
+
+.none{
+    width: 100%;
+    position: relative;
+    opacity: 0.0;
+    /* background-color: purple; */
+}
+
+.teks {
+    z-index: 2;
+    width: 70%;
+    height: 100%;
+    text-align: start;
+    margin-left: auto;
+    margin-right: auto;
+    left: 150px;
+    top: 450px;
+    color: white;
+    position: absolute;
+    /* background-color: green; */
+}
+
+.teks h2{
+    color: white;
+    margin: 20px 0;
+}
+
+.allmovies{
+    color: white;
+    width: 100%;
+    padding: 10px;
+    /* background-color: cyan;  */
+}
+
+.allmovies h2{
+    margin: 0 30px;
+}
+
+.movies{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: green;  */
+    justify-content: center;
+}
+
+.poster{
+    width: 18%;
+    margin: auto;
+}
+
+.movies img{
+    width: 100%;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+    border-radius: 10px;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    color: white;
+    height:200px;
+}
+
+.footerkiri{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: cyan; */
+}
+
+.footerkiri img{
+    width: 150px;
+}
+
+.footertengah{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+}
+
+.tengahatas{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #786B6B; */
+}
+
+.tengahatas img{
+    width: 60px;
+}
+
+.tengahbawah{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerkanan{
+    width: 34%;
+    height: 100%;
+    flex-direction: column;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: purple; */
+}
+
+/* media query : 
+1150 px
+900 px
+768 px
+650 px
+580 px
+500 px
+450 px
+380 px
+330 px */
+
+@media(max-width: 1150px){
+
+    .teks {
+        left: 120px;
+        top: 350px;
+    }
+
+    .teks h2{
+        font-size: 20px;
+    }
+
+    .teks h3{
+        font-size: 15px;
+    }
+
+    .teks button{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 900px){
+
+    .teks {
+        left: 100px;
+        top: 300px;
+    }
+
+    .teks h2{
+        font-size: 20px;
+    }
+
+    .teks h3{
+        font-size: 15px;
+    }
+
+    .teks button{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+
+    .navkiri img{
+        width: 100px;
+    
+    }
+
+    .teks {
+        left: 100px;
+        top: 250px;
+        width: 70%;
+    }
+
+    .teks h2{
+        font-size: 20px;
+    }
+
+    .teks h3{
+        font-size: 15px;
+    }
+
+    .teks button{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 650px){
+
+    
+    .teks {
+        left: 70px;
+        top: 220px;
+        width: 70%;
+    }
+
+    .teks h2{
+        font-size: 18px;
+    }
+
+    .teks h3{
+        font-size: 13px;
+    }
+
+    .teks button{
+        font-size: 17px;
+    }
+
+    .allmovies h2{
+        font-size: 15px;
+    }
+
+    .navkiri img{
+        width: 100px;
+    
+    }
+
+    .footerkiri img{
+        width: 100px;
+    }
+
+    .footertengah img{
+        width: 40px;
+    }
+
+    footer{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 580px){    
+
+    .teks {
+        left: 60px;
+        top: 200px;
+        width: 80%;
+    }
+
+    .teks h2{
+        font-size: 15px;
+    }
+
+    .teks h3{
+        font-size: 12px;
+    }
+
+    .teks button{
+        font-size: 15px;
+        padding: 7px;
+    }
+}
+
+
+@media (max-width: 500px){    
+
+    .teks {
+        left: 40px;
+        top: 150px;
+        width: 80%;
+    }
+
+    .teks h2{
+        font-size: 15px;
+    }
+
+    .teks h3{
+        font-size: 12px;
+    }
+
+    .teks button{
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 450px){    
+
+    .teks {
+        left: 35px;
+        top: 150px;
+        width: 80%;
+    }
+
+    .teks h2{
+        font-size: 15px;
+    }
+
+    .teks h3{
+        font-size: 12px;
+    }
+
+    .teks button{
+        font-size: 15px;
+    }
+
+    .footerkiri img{
+        width: 80px;
+    }
+
+    .footertengah img{
+        width: 30px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 380px){    
+
+    .teks {
+        left: 30px;
+        top: 140px;
+        width: 85%;
+    }
+
+    .teks h2{
+        font-size: 10px;
+    }
+
+    .teks h3{
+        font-size: 10px;
+    }
+
+    .teks button{
+        font-size: 15px;
+    }
+
+    .footerkiri img{
+        width: 80px;
+    }
+
+    .footertengah img{
+        width: 30px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 330px){    
+
+    .teks {
+        left: 30px;
+        top: 130px;
+        width: 85%;
+    }
+
+    .teks h2{
+        font-size: 12px;
+    }
+
+    .teks h3{
+        font-size: 8px;
+    }
+
+    .teks button{
+        font-size: 15px;
+    }
+}
