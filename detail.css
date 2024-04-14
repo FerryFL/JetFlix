@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #2F2A2A;
+    padding-top: 120px;
+    z-index: -9;
+}
+
+a{
+    color: #D72020;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+button{
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #D72020;
+    border-radius: 10%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    top: 0;
+    background-color: #2F2A2A;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+.navkiri{
+    width: 200px;
+    height: 100%;
+    /* background-color: cyan; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.navkiri img{
+    width: 130px;
+
+} 
+
+.navmovie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    /* background-color: purple; */
+}
+
+.navmovie a{
+    color: #786B6B;
+    font-size: 22px;
+}
+
+.navnews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    /* background-color: rgb(72, 94, 121); */
+}
+
+.navnews a{
+    color: #786B6B;
+    font-size: 22px;
+}
+
+.title{
+    width: 100%;
+    height: 100px;
+    /* background-color: cyan; */
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.detail{
+    width: 100%;
+    margin: auto;
+    /* background-color: purple; */
+    display: flex;
+}
+
+.detailkiri{
+    width: 30%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.detailkiri img{
+    height: 100%;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+    border-radius: 10px;
+}
+
+.detailkanan{
+    width: 70%;
+    /* background-color: grey; */
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detailkanan h2{
+    font-size: 40px;
+}
+
+.detailkanan h3{
+    font-size: 20px;
+}
+
+.people{
+    width: 90%;
+    margin: auto;
+    padding:20px 0;
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+
+}
+
+.creator img{
+    width: 120px ;
+}
+
+.cast{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.castbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cast img{
+    width: 100px ;
+}
+
+.episode{
+    width: 90%;
+    margin: auto;
+
+}
+
+.boxepisode{
+    display: flex;
+    /* background-color: azure; */
+    width: 100%;
+    height: 200px;
+}
+
+.nomor{
+    width: 5%;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    /* background-color: lightgoldenrodyellow; */
+}
+
+.gambar img{
+    width: 90%;
+}
+
+.deskripsi{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: violet; */
+}
+
+.waktu{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: orange; */
+}
+
+
+footer{
+    width: 100%;
+    display: flex;
+    height:200px;
+}
+
+.footerkiri{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: cyan; */
+}
+
+.footerkiri img{
+    width: 150px;
+}
+
+.footertengah{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+}
+
+.tengahatas{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #786B6B; */
+}
+
+.tengahatas img{
+    width: 60px;
+}
+
+.tengahbawah{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerkanan{
+    width: 34%;
+    height: 100%;
+    flex-direction: column;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: purple; */
+}
+
+@media (max-width: 768px){
+
+    .navkiri{
+        width: 200px;
+    }
+    .navkiri img{
+        width: 100px;
+    }
+    .detailkiri{
+        height: 200px ;
+    }
+
+    .detailkanan h2{
+        font-size: 30px;
+        /* background-color: blue; */
+    }
+
+    .detailkanan h3{
+        font-size: 15px;
+    }
+
+    .people h2{
+        font-size: 20px;
+    }
+
+    .people h3{
+        font-size: 15px;
+    }
+
+    .creator img{
+        width: 80px ;
+    }
+
+    .cast img{
+        width: 60px ;
+    }
+
+    .episode h2{
+        font-size: 20px;
+    }
+    .episode h3{
+        font-size: 15px;
+    }
+
+    .footerkiri img{
+        width: 100px;
+    }
+
+    .footertengah img{
+        width: 40px;
+    }
+
+    footer{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px){
+
+
+    header .navmovie a{
+        font-size: 15px;
+    }
+
+    header .navnews a{
+        font-size: 15px;
+    }
+    .detailkiri{
+        height: 150px ;
+    }
+
+    .detailkanan h2{
+        font-size: 20px;
+    }
+
+    .detailkanan h3{
+        font-size: 10px;
+    }
+
+    .episode h2{
+        font-size: 15px;
+    }
+    .episode h3{
+        font-size: 10px;
+    }
+
+    .footerkiri img{
+        width: 80px;
+    }
+
+    .footertengah img{
+        width: 30px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+}

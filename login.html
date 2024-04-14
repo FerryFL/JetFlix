@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="navkiri">
+            <a href="index.html"><img src="assets/header/logo.png" alt=""></a>
+        </div>
+        <div class="navkanan">
+            
+
+        </div>
+    </header>
+    
+    <div class="container">
+
+        <p class="dummy">Dummy Account : <br>-Username : dummy <br>-Password : 12345</p><br>
+        <h4 id="error" style="color:brown"></h4><br>
+        <form action="movie.html" onsubmit="loginDummy(event)" id="login">
+                <div class="top">
+                    <h2>Login</h2>
+                    <input type="text" placeholder="Username" id="dummyname">
+                    <input type="password" placeholder="Password" id="dummypass">
+                </div>
+            <button type="submit">Login</button>
+            <p>No Account Yet?<a href="signup.html">Sign Up!</a></p>
+        </form>
+    </div>
+    
+</body>
+<script src="index.js"></script>
+</html>
