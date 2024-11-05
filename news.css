@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #2F2A2A;
+    padding-top: 120px;
+    z-index: -9;
+}
+
+a{
+    color: #D72020;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+button{
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #D72020;
+    border-radius: 10%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    top: 0;
+    background-color: #2F2A2A;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+.navkiri{
+    width: 200px;
+    height: 100%;
+    /* background-color: cyan; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.navkiri img{
+    width: 130px;
+
+} 
+
+.navmovie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    /* background-color: purple; */
+}
+
+.navmovie a{
+    color: #786B6B;
+    font-size: 22px;
+}
+
+.navnews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    /* background-color: rgb(72, 94, 121); */
+}
+
+.navnews a{
+    color: #786B6B;
+    font-size: 22px;
+}
+
+.title{
+    width: 100%;
+    height: 100px;
+    /* background-color: cyan; */
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+}
+
+.movie{
+    width: 90%;
+    margin: auto;
+    /* background-color: purple; */
+    display: flex;
+    color: white;
+}
+
+.moviekiri{
+    width: 300px;
+    height: 400px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.moviekiri img{
+    height: 100%;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+    border-radius: 10px;
+}
+
+.moviekanan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.atas{
+    height: 25%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bawah{
+    height: 15%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: end;
+}
+
+.gambar{
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+
+.download{
+    width: 35px;
+    height: 35x;
+}
+
+.play{
+    width: 50px;
+    height: 50px;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    color: white;
+    height:200px;
+}
+
+.footerkiri{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: cyan; */
+}
+
+.footerkiri img{
+    width: 150px;
+}
+
+.footertengah{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+}
+
+.tengahatas{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #786B6B; */
+}
+
+.tengahatas img{
+    width: 60px;
+}
+
+.tengahbawah{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerkanan{
+    width: 34%;
+    height: 100%;
+    flex-direction: column;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: purple; */
+}
+
+@media (max-width: 768px){
+
+    .navkiri img{
+        width: 100px;
+    
+    }
+    
+    .movie{
+        width: 100%;
+    }
+    
+    .moviekiri{
+        width: 30%;
+        height: 200px;
+        padding: 10px;
+    }
+    
+    .moviekiri img{
+        height: 100%;
+    }
+    
+    .moviekanan{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .moviekanan h2{
+        font-size: 20px;
+    }
+
+    .moviekanan h3{
+        font-size: 15px;
+    }
+
+    .download{
+        width: 25px;
+        height: 25x;
+    }
+    
+    .play{
+        width: 35px;
+        height: 35px;
+    }
+
+    .footerkiri img{
+        width: 100px;
+    }
+
+    .footertengah img{
+        width: 40px;
+    }
+
+    footer{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px){
+
+    header .navmovie a{
+        font-size: 15px;
+    }
+
+    header .navnews a{
+        font-size: 15px;
+    }
+
+    .moviekiri{
+        height: 150px;
+        padding: 5px;
+    }
+
+    .moviekanan h2{
+        font-size: 15px;
+    }
+
+    .moviekanan h3{
+        font-size: 10px;
+    }
+    
+    
+    .footerkiri img{
+        width: 80px;
+    }
+
+    .footertengah img{
+        width: 30px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+}
